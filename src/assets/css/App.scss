@@ -1,0 +1,15 @@
+/* 定义全局变量样式 */
+$MARGIN_LEFT: 10 12 14 16;
+
+$MARGIN_RIGHT: 10 12 14 16;
+
+$MARGIN_TOP: 10 12 14 16;
+
+$MARGIN_BOTTOM: 10 12 14 16;
+
+// 遍历$MARGIN_LEFT
+@each $margin-left in $MARGIN_LEFT {
+    .margin-l-#{$margin-left} {
+        margin-left: #{$margin-left}px;
+    }
+}
